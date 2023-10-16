@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)  # Create Flask app
 
-@app.route('/fizzbuzz')  # Define route for FizzBuzz page
+@app.route('/')  # Define route for FizzBuzz page
 def fizzbuzz():
     data = []  # Initialize list for FizzBuzz results
     for num in range(1, 101):  # Loop through numbers 1 to 100
